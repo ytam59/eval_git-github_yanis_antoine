@@ -1,0 +1,188 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #24292f;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #24292f;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #c9d1d9;
+    margin-bottom: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+
+.accueil {
+    background-color: #e6f0fa;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.accueil h2 {
+    font-size: 32px;
+    color: #0969da;
+    margin-bottom: 20px;
+}
+
+.accueil p {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.bouton {
+    display: inline-block;
+    background-color: #0969da;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.bouton:hover {
+    background-color: #0550ae;
+}
+
+
+section {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #0969da;
+    margin-bottom: 25px;
+}
+
+
+.projet p {
+    max-width: 750px;
+    margin: 12px auto;
+}
+
+
+.membres {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.carte {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.carte h3 {
+    color: #0969da;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.etapes {
+    background-color: #e6f0fa;
+}
+
+.etape {
+    background-color: white;
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    border-left: 5px solid #0969da;
+}
+
+.etape h3 {
+    color: #0969da;
+    margin-bottom: 8px;
+}
+
+
+.conclusion p {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+footer {
+    background-color: #24292f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .accueil {
+        padding: 50px 15px;
+    }
+
+    .accueil h2 {
+        font-size: 25px;
+    }
+
+    .membres {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carte {
+        width: 100%;
+        max-width: 350px;
+    }
+}
